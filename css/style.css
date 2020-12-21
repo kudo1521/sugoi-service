@@ -6,13 +6,6 @@
     margin: 0 auto;
     display: flex;
 }
-ul {
-    display: flex;
-    margin: 22px 0 22px auto;
-}
-li {
-    margin-right: 54px;
-}
 img {
     width: 100%;
     object-fit: cover;
@@ -24,6 +17,13 @@ header {
 }
 header h1 {
     margin: 24px 0;
+}
+header li {
+    margin-right: 56px;
+}
+header ul {
+    display: flex;
+    margin: 22px 0 22px auto;
 }
 .news-button {
     margin: 0;
