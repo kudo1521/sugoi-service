@@ -39,6 +39,7 @@ header ul {
     position: absolute;
     top: 207px;
     right: 160px;
+    display: none;
 }
 .catch h1 {
     font-size: 68px;
