@@ -21,6 +21,9 @@ header h1 {
 header li {
     margin-right: 56px;
 }
+header li:hover {
+    opacity: 0.5;
+}
 header ul {
     display: flex;
     margin: 22px 0 22px auto;
@@ -29,6 +32,26 @@ header ul {
     margin: 0;
 }
 /* 見出し */
+.top-wrapper {
+    position: relative;
+}
+.catch {
+    position: absolute;
+    top: 207px;
+    right: 160px;
+}
+.catch h1 {
+    font-size: 68px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.catch h2 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
 .top-wrapper img {
     height: 560px;
 }
