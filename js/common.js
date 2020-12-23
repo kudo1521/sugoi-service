@@ -1,2 +1,2 @@
 $('.slick01').slick();
-$('catch').fadeIn();
+$('.catch').fadeIn(3000);
