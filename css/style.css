@@ -71,8 +71,9 @@ header ul {
     height: 70px;
     color: #ffffff;
     position: absolute;
-    top: 592px;
-    right: 230px;
+    right: 0;
+    left: 0;
+    bottom: -35px;
 }
 .news-banner-text {
     display: flex;
