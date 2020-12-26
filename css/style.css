@@ -10,6 +10,14 @@ img {
     width: 100%;
     object-fit: cover;
 }
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+.ef {
+    transform: translateY(100px);
+    transition: all 0.5s;
+}
 /* ヘッダー */
 header {
     display: flex;
@@ -65,7 +73,6 @@ header ul {
     position: absolute;
     top: 592px;
     right: 230px;
-
 }
 .news-banner-text {
     display: flex;
@@ -76,9 +83,45 @@ header ul {
     padding-right: 25px;
 }
 .news-banner p{
-    font-size: 16px;
     margin: auto;
 }
 .news-banner a {
     color: #ffffff;
+}
+/* company-details */
+.company {
+    background-color: antiquewhite;
+}
+.company-details {
+    margin: 0 auto;
+    padding: 140px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.company-details img {
+    width: 540px;
+}
+.contents {
+    margin: auto 0;
+}
+.contents h1 {
+    font-size: 50px;
+}
+.contents p {
+    width: 340px;
+    margin: 50px 0;
+}
+.link {
+    background-color:  #F27E1A;
+    color: #F27E1A;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.link a {
+    color: #ffffff;
+}
+link p {
+    text-align: center;
 }
