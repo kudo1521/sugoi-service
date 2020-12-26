@@ -56,3 +56,29 @@ header ul {
 .top-wrapper img {
     height: 560px;
 }
+/* ニュースバナー */
+.news-banner {
+    background-color: #F27E1A;
+    font-size: 20px;
+    height: 70px;
+    color: #ffffff;
+    position: absolute;
+    top: 592px;
+    right: 230px;
+
+}
+.news-banner-text {
+    display: flex;
+    margin: auto;
+}
+.news-banner h1 {
+    border-right:#ffffff 1px solid;
+    padding-right: 25px;
+}
+.news-banner p{
+    font-size: 16px;
+    margin: auto;
+}
+.news-banner a {
+    color: #ffffff;
+}
