@@ -91,13 +91,14 @@ header ul {
 }
 /* company-details */
 .company {
-    background-color: antiquewhite;
+    background-color: #ffffff;
 }
 .company-details {
     margin: 0 auto;
     padding: 140px 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .company-details img {
     width: 540px;
@@ -125,4 +126,19 @@ header ul {
 }
 link p {
     text-align: center;
+}
+.logo {
+    opacity: 0.5;
+    font-size: 250px;
+    right: 50%;
+    top: 10%;
+    font-weight: bold;
+    position: absolute;
+    color: #F4F4F4;
+}
+.sugoi {
+    right: 50%;
+}
+.story {
+    left: 50%;
 }
