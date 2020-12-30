@@ -1,4 +1,7 @@
-$('.slick01').slick();
+$('.slick01').slick({
+    autoplay:true,
+    autoplaySpeed:3000
+});
 $('.catch').fadeIn(3000);
 $(function(){
     $(".ef").css({opacity:"0"});
