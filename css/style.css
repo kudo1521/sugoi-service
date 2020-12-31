@@ -2,7 +2,7 @@
 /* 全体 */
 .inner {
     width: 100%;
-    max-width: 1280px;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
 }
@@ -21,10 +21,14 @@ p {
 h1,h2,a {
     font-family: 'Montserrat', sans-serif;
 }
+.spase-fixed {
+    padding: 0 100px;
+}
 /* ヘッダー */
 header {
     display: flex;
     height: 68px;
+    padding: 0 100px;
 }
 header h1 {
     margin: 24px 0;
@@ -49,10 +53,14 @@ header ul {
 }
 .catch {
     position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    right: 400px;
-    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    align-items: flex-end;
 }
 .catch h1 {
     font-size: 68px;
@@ -71,13 +79,19 @@ header ul {
 }
 /* ニュースバナー */
 .news-banner {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    align-items: flex-end;
     background-color: #F27E1A;
     font-size: 20px;
     height: 70px;
     color: #ffffff;
     position: absolute;
-    right: 0;
-    left: 0;
     bottom: -35px;
 }
 .news-banner-text {
@@ -88,28 +102,40 @@ header ul {
     border-right:#ffffff 1px solid;
     padding-right: 25px;
 }
+.date {
+    margin: 0 25px;
+}
 .news-banner p{
     margin: auto;
 }
 .news-banner a {
     color: #ffffff;
 }
-/* company-details */
+/* 会社概要 */
 .company {
     background-color: #ffffff;
 }
 .company-details {
     margin: 0 auto;
     padding: 140px 0;
-    display: flex;
     justify-content: space-between;
     position: relative;
+    align-items: center;
 }
-.company-details img {
-    width: 540px;
+.company-image {
+    width: 60%;
 }
 .contents {
-    margin: auto 0;
+    align-items: center;
+}
+.about-us {
+    justify-content: left;
+    padding-right: 30px;
+}
+.message {
+    display: flex;
+    justify-content: right;
+    padding-left: 30px;
 }
 .contents h1 {
     font-size: 50px;
@@ -120,30 +146,30 @@ header ul {
 }
 .link {
     background-color:  #F27E1A;
-    color: #F27E1A;
-    width: 250px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-}
-.link a {
     color: #ffffff;
-}
-link p {
+    max-width: 250px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
 }
 .logo {
     opacity: 0.5;
-    font-size: 250px;
-    right: 50%;
-    top: 10%;
+    font-size: 150px;
     font-weight: bold;
     position: absolute;
     color: #F4F4F4;
 }
 .sugoi {
-    right: 50%;
+    top: 10%;
+    left: -20%;
 }
 .story {
-    left: 50%;
+    top: 15%;
+    right: -20%;
+}
+@media (max-width: 960px){
+    .catch-copy {
+        margin-right: 30px;;
+    }
 }
