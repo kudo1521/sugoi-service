@@ -36,6 +36,8 @@ header {
 }
 header h1 {
     margin: 24px 0;
+    font: inherit;
+    font-family: 'Montserrat', sans-serif;
 }
 header li {
     margin-right: 56px;
@@ -213,6 +215,39 @@ header ul {
 }
 .service-link {
     margin: 0 auto;
+}
+/* ニュース */
+.news {
+    padding: 110px 0;
+}
+.news-details-wrap {
+    display: block;
+}
+.news-text {
+    display: flex;
+    border-bottom: solid 1px #B7B7B7;
+    padding: 20px 0;
+}
+.news-text h2 {
+    margin: auto 0;
+    padding: 0 40px 0 10px;
+    color: #B7B7B7;
+}
+.news-text p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.news-contents {
+    padding: 20px 0 60px 0;
+}
+/* その他 */
+.other {
+    padding-bottom: 140px;
+}
+.other-contents {
+    justify-content: space-between;
+}
+.other-image {
+    width: 45%;
 }
 @media (max-width: 960px){
     .catch-copy {
