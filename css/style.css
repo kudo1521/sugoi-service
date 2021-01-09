@@ -18,7 +18,7 @@ p {
     transform: translateY(100px);
     transition: all 0.5s;
 }
-h1,h2,a {
+h1,h2,a,ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -248,6 +248,56 @@ header ul {
 }
 .other-image {
     width: 45%;
+}
+/* フッター */
+.fotter {
+    background-color: #292929;
+    color: #B7B7B7;
+}
+.fotter ul {
+    display: flex;
+}
+.fotter-contents {
+    justify-content: space-between;
+}
+.fotter-logo {
+    width: 50%;
+}
+.fotter-logo img {
+    padding: 50px 0 25px 0;
+    width: 20%;
+}
+.privacy {
+    display: flex;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+}
+.privacy li {
+    padding: 0 20px;
+    border-right: solid 1px #B2B2B2;
+}
+.privacy li:first-child{
+    padding-left: 0;
+}
+.privacy li:last-child {
+    padding-right: 0;
+    border: none;
+}
+.menu {
+    width: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+.main-menu li {
+    padding: 50px 30px 30px 0;
+}
+.sub-menu li {
+    padding: 0 30px 100px 0;
+}
+.license {
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 12px;
 }
 @media (max-width: 960px){
     .catch-copy {
