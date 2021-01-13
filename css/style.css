@@ -199,7 +199,6 @@ header ul {
 .service-contents img {
     width: 100px;
     align-items: center;
-    height: 150px;
 }
 .service-item {
     padding: 0 30px;
@@ -216,6 +215,34 @@ header ul {
 .service-link {
     margin: 0 auto;
 }
+/* 順番にフェードイン */
+.item {
+    opacity: 0;
+}
+.item:nth-child(1) {
+    -webkit-animation: example 0.5s ease 0.5s 1 forwards;
+    animation: example 0.5s ease 0.5s 1 forwards;
+}
+.item:nth-child(2) {
+    -webkit-animation: example 0.5s ease 1s 1 forwards;
+    animation: example 0.5s ease 1s 1 forwards;
+}
+.item:nth-child(3) {
+    -webkit-animation: example 0.5s ease 1.5s 1 forwards;
+    animation: example 0.5s ease 1.5s 1 forwards;
+}
+@keyframes example {
+    100% {
+        opacity: 1;
+    }
+}
+/* .fadein {
+	opacity: 0;
+	transition: all 1000ms;
+}
+.fadein.scrollin {
+	opacity: 1;
+} */
 /* ニュース */
 .news {
     padding: 110px 0;

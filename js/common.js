@@ -17,3 +17,24 @@ $(function(){
         });
     });
 });
+
+// $(function(){
+// 	$(window).scroll(function (){
+// 		$('.fadein_block').each(function(){
+// 			var elemPos = $(this).offset().top;
+// 			var scroll = $(window).scrollTop();
+// 			var windowHeight = $(window).height();
+// 			var target = $('.fadein_block');
+// 			var speed = 1000;
+// 			if(scroll > elemPos - windowHeight){
+//                 target.find('fadein').addClass('scrollin');
+// 				setTimeout(function(){
+// 					target.find('fadein').addClass('scrollin');
+// 					setTimeout(function(){
+// 						target.find('fadein').addClass('scrollin');
+// 					},speed);
+// 				},speed);
+// 			}
+// 		});
+// 	});
+// });
