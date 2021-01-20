@@ -124,10 +124,16 @@ header ul {
 }
 .company-details {
     margin: 0 auto;
-    padding: 140px 0;
+    padding: 0;
     justify-content: space-between;
     position: relative;
     align-items: center;
+}
+.details-block-about {
+    padding: 140px 0 50px 0;
+}
+.details-block-message {
+    padding: 50px 0 140px 0;
 }
 .company-image {
     width: 60%;
@@ -174,7 +180,7 @@ header ul {
 }
 /* サービス */
 .service {
-    background-color: #EFEFEF;
+    background-image: url("img/mask.png");
 }
 .service-details {
     display: block;
@@ -189,16 +195,17 @@ header ul {
     padding: 60px 0;
 }
 .service-contents {
+    text-align: center;
     width: 32%;
     background-color: #ffffff;
 }
 .service-contents-image {
-    text-align: center;
-    padding: 50px 0;
+    display: inline-block;
+    height: 175px;
 }
 .service-contents img {
-    width: 100px;
-    align-items: center;
+    height: 100%;
+    object-fit: contain;
 }
 .service-item {
     padding: 0 30px;
@@ -208,6 +215,7 @@ header ul {
     text-align: center;
     color: #F27E1A;
     line-height: 1.4;
+    height: 50px;
 }
 .service-item p {
     padding: 20px 0 40px 0;
@@ -274,7 +282,7 @@ header ul {
     justify-content: space-between;
 }
 .other-image {
-    width: 45%;
+    width: calc(100% / 2 - 20px);
 }
 /* フッター */
 .fotter {
@@ -288,7 +296,7 @@ header ul {
     justify-content: space-between;
 }
 .fotter-logo {
-    width: 50%;
+    width: 100%;
 }
 .fotter-logo img {
     padding: 50px 0 25px 0;
@@ -296,12 +304,12 @@ header ul {
 }
 .privacy {
     display: flex;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
 }
 .privacy li {
     padding: 0 20px;
     border-right: solid 1px #B2B2B2;
+    font-weight: lighter;
 }
 .privacy li:first-child{
     padding-left: 0;
@@ -311,19 +319,23 @@ header ul {
     border: none;
 }
 .menu {
-    width: 50%;
+    width: 100%;
     color: #ffffff;
     font-size: 20px;
 }
 .main-menu li {
+    font-size: 20px;
     padding: 50px 30px 30px 0;
 }
 .sub-menu li {
+    font-size: 16px;
     padding: 0 30px 100px 0;
 }
 .license {
     justify-content: center;
     padding-bottom: 10px;
+}
+.license p {
     font-size: 12px;
 }
 @media (max-width: 960px){
